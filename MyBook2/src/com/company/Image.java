@@ -7,7 +7,18 @@ public class Image implements Element {
         this.imageName = imageName;
     }
 
+    @Override
     public void print() {
         System.out.println("Image with title: " + this.imageName);
+    }
+
+    @Override
+    public void add(Element element) {
+
+    }
+
+    @Override
+    public void remove(Element element) {
+
     }
 }
