@@ -25,9 +25,9 @@ public class Main {
         System.out.println("Printing of the section 1 took " + (endTime - startTime) + " milliseconds");
 
         startTime = System.currentTimeMillis();
-        playboyS2.print();
+        playboyS1.print();
         endTime = System.currentTimeMillis();
 
-        System.out.println("Printing of the section 2 took " + (endTime - startTime) + " milliseconds");
+        System.out.println("Printing again the section 1 took " + (endTime - startTime) + " milliseconds");
     }
 }
