@@ -1,14 +1,22 @@
 package com.company;
 
-public class Paragraph implements Element{
+public class Paragraph implements Element {
     private String text;
+    private AlignStrategy strategy;
 
     public Paragraph(String text) {
         this.text = text;
+        this.strategy = null;
     }
 
+
     public void print() {
-        System.out.println("Paragraph: " + this.text);
+        if(this.strategy == null) {
+            System.out.println("Paragraph: " + this.text);
+        }
+        else{
+            strategy.render(this.text);
+        }
     }
 
     @Override
@@ -20,4 +28,9 @@ public class Paragraph implements Element{
     public void remove(Element element) {
 
     }
+
+    public void setAlignStrategy(AlignStrategy strategy) {
+        this.strategy = strategy;
+    }
+
 }
