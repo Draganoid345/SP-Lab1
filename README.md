@@ -17,3 +17,8 @@ just some content on lab3, no proxy
 https://github.com/Draganoid345/SP-Lab1/commit/2d460cc38d38c9b8062e0ed928e579d1eb1a7128
 
 all good
+
+# Feedback lab6:
+no content
+
+# Proposed grade: 8.5
