@@ -1,7 +1,7 @@
 package com.company;
 
 public interface Picture {
-    void print();
+    void render();
 
     void add(Element element);
 

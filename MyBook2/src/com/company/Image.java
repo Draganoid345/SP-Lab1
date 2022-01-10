@@ -16,8 +16,13 @@ public class Image implements Picture, Element {
     }
 
     @Override
-    public void print() {
+    public void render() {
         System.out.println("Image with title: " + this.imageName);
+    }
+
+    @Override
+    public void accept(Visitor visitor) {
+        visitor.visit(this);
     }
 
     @Override

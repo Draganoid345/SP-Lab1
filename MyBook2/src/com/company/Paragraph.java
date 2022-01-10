@@ -9,14 +9,19 @@ public class Paragraph implements Element {
         this.strategy = null;
     }
 
-
-    public void print() {
+    @Override
+    public void render() {
         if(this.strategy == null) {
             System.out.println("Paragraph: " + this.text);
         }
         else{
             strategy.render(this.text);
         }
+    }
+
+    @Override
+    public void accept(Visitor visitor) {
+        visitor.visit(this);
     }
 
     @Override

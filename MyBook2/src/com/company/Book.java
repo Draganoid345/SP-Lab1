@@ -19,7 +19,13 @@ public class Book extends Section{
         this.add(sec);
     }
 
-    public void print() {
+    @Override
+    public void accept(Visitor visitor) {
+        visitor.visit(this);
+    }
+
+    @Override
+    public void render() {
         System.out.println("Book: " + this.title + "\n");
 
         System.out.println("Authors:");
@@ -27,6 +33,6 @@ public class Book extends Section{
         System.out.println();
 
 //        super.print();
-        this.sectionList.forEach(Element::print);
+        this.sectionList.forEach(Element::render);
     }
 }

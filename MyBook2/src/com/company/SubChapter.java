@@ -29,7 +29,7 @@ public class SubChapter {
     public void print() {
         System.out.println("Subchapter: " + this.name);
         for(Element el : this.content){
-            el.print();
+            el.render();
         }
     }
 

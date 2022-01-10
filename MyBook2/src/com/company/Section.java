@@ -9,9 +9,17 @@ public class Section implements Element {
     public Section(String title) { this.title = title; }
 
     @Override
-    public void print() {
+    public void render() {
         System.out.println(this.title);
-        this.sectionList.forEach(Element::print);
+        this.sectionList.forEach(Element::render);
+    }
+
+    @Override
+    public void accept(Visitor visitor) {
+        for(Element el:sectionList) {
+            el.accept(visitor);
+        }
+        visitor.visit(this);
     }
 
     @Override
@@ -28,4 +36,6 @@ public class Section implements Element {
             System.out.println("No such element in sectionList!");
         }
     }
+
+
 }
