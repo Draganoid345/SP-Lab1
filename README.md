@@ -17,3 +17,10 @@ just some content on lab3, no proxy
 https://github.com/Draganoid345/SP-Lab1/commit/2d460cc38d38c9b8062e0ed928e579d1eb1a7128
 
 all good
+
+# Feedback lab6:
+https://github.com/Draganoid345/SP-Lab1/tree/234728581af3551290e73b2a6e84b0202b0aa115
+
+no generate Table of content
+
+# Proposed grade: 9.5
